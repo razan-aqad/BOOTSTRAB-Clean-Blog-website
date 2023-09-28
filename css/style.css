@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 *{
     font-family: Arial, Helvetica, sans-serif;
@@ -10,152 +11,144 @@ body{
 
 /* HEADER */
 
-.head{
+
+/* ------------ HEADER -------------------- */
+
+header {
     background-color: rgb(245, 243, 241);
-    padding: 10px;
+    position: relative;
+    padding: 10px 35px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.head .logo{
-    padding: 10px;
-    text-decoration: none;
-    color: rgb(192, 192, 192);
-}
-.head .logo a{
-    text-decoration: none;
-    color: rgb(192, 192, 192);
-}
-
-.head .list a{
-    padding-right: 15px;
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(192, 192, 192);
-}
-
-.head .rit-hdr{
-    padding-right: 22px;
-}
-
-.head .rit-hdr a{
-    padding: 10px;
-}
-
-.head .rit-hdr .free{
-    text-decoration: none;
-    color: crimson;
-    background-color: rgb(243, 231, 226);
-    
-}
-
-.head .rit-hdr .btn{
-    text-decoration: none;
-    color: rgb(192, 192, 192);
-}
-
-.head .list .des{
-    color: #6c757d;
-    font-size: medium;
-}
-
-.pad{
-    color: #6c757d;
-    font-size: medium;
-}
-
-.mob{
-    color: #ca520d;
-    font-size: medium;
-}
-
-/* MAIN */
-
-.main1{
+.head {
     display: flex;
     justify-content: space-between;
-    padding-top: 35px;
-    
+    align-items: center;
+    width: 100%;
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: rgb(192, 192, 192);
+}
+
+.over {
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+.list {
+    display: flex;
+    gap: 10px;
+}
+
+.list a {
+    text-decoration: none;
+    color: black;
+}
+
+.rit-hdr {
+    display: flex;
+    align-items: center;
+}
+
+.github img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.close {
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
+}
+/* ------------ HEADER -------------------- */
+
+
+
+/* ------------ MAIN -------------------- */
 
 .back4main{
     background-image: url(..//images/home-bg.jpg);
     height: 550px;
     background-position: center;
+    width: 100%;
     
 }
 
-/* .shaf{
-background-color: color: rgba(114, 47, 145, 0.3);
-height: 550px;
-} */
 
-.main1 .boot a{
-    padding-left: 140px;
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    display: inline-block;
-    
-}
 
-.main1 .boot{
+.main1 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 25px;
+    color: black;
 }
 
-.main1 .menu{
-padding-right: 120px;
-}
-
-.main1 .menu a{
+.boot a {
     text-decoration: none;
-    
+    color: black;
+    font-weight: bold;
 }
 
-.main1 .menu ul {
-    list-style: none;
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    
 }
 
-.main1 .menu ul li{
-    padding-right: 20px;
-    
+.menu li {
+    margin-right: 20px;
 }
 
-.main1 .menu ul li a {
-    color: white;
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
+
+
 
 .clean{
-    padding-left: 563px;
-    padding-top: 180px;
+    padding-left: 20%;
+    padding-top: 10%;
 
 }
 
 .clean .heading1{
     font-size: 76px;
-    color: white;
+    color: black;
     padding-top: 0px;
+    margin-bottom: 0;
 }
 
 .clean .heading2{
-    font-size: 15px;
-    padding-left: 67px;
-    color: white;
+    font-size: 18px;
+    padding-left: 10px;
+    color: black;
 }
 
 .essential{
     margin-top: 80px;
-    margin-left: 440px;
-    width: 600px;
+    margin: auto;
+    width: 50%;
+    
 }
 
+
+
+
+
 .essential .div{
-    padding-top: 30px;
+    padding-top: 60px;
     padding-bottom: 20px;
     
 }
@@ -178,7 +171,8 @@ padding-right: 120px;
 }
 
 .horiza {
-    width: 680px;
+    width: 110%;
+    margin-left: 0;
     color: #6c757d;
 }
 .fin{
@@ -194,8 +188,8 @@ padding-right: 120px;
 }
 
 .btn{
-    padding-left: 1000px;
-    
+   margin: 25px auto;
+   width: 135px;
 }
 
 .btn .button{
@@ -203,18 +197,41 @@ padding-right: 120px;
     height: 23px;
     display: inline-block;
     padding: 10px;
-    padding-left: 29px;
-    padding-top: 18px;
+
+
+    /* padding-left: 29px;
+    padding-top: 18px; */
+
+    text-align: center;
+    line-height: 23px;
+
     background-color: #0085A1;
     border-color: #0085A1;
     font-weight: 600;
     color: white;
     cursor: pointer;
+
 }
 
-.icons{
+
+/* ------------ MAIN -------------------- */
+
+
+
+
+
+
+/* footer style using flex */
+
+footer {
     display: flex;
-    padding-left: 690px;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.icons {
+    display: flex;
 }
 
 .logo_footer{
@@ -233,8 +250,80 @@ padding-right: 120px;
 
 }
 
-.Copyright{
-    padding-left: 673px;
-    color: #6c757d !important;
+.Copyright {
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+/* make the style more responsive using media for smaller or even bigger screens */
+
+/* Media query for smaller screens (adjust the breakpoint as needed) */
+
+@media (max-width: 768px) {
+
+
+    /* ----------- HEADER ----------- */
+    .head {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .list {
+        margin-top: 10px;
+    }
+
+    .list a {
+        display: block;
+        margin-bottom: 10px;
+    }
+    /* ----------- HEADER  ----------- */
+
+    
+
+
+    /* -----------  MAIN 1 HEADER --------------- */
+
+  .main1 {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    margin-top: 10px;
+}
+
+.menu ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu li {
+    margin: 10px 0;
+}
+    /* -----------  MAIN 1 HEADER --------------- */
+
+
+/* -----------  FOOTER --------------- */
+footer {
+    flex-direction: column;
+}
+
+.icons {
+    flex-direction: row; /* align icons horizontally */
+    margin-top: 10px;
+}
+
+.logo_footer {
+    margin: 0 5px;
+}
+
+.Copyright {
+    margin-top: 10px;
+}
+
+/* -----------  FOOTER --------------- */
 }
 
